@@ -1,0 +1,38 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: var(--color-title);
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.75rem;
+    color: var(--color-text);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+  }

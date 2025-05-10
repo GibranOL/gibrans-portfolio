@@ -1,0 +1,46 @@
+.sidebar-navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    height: 50px;
+    width: fit-content;
+    gap: 16px;
+  
+    backdrop-filter: blur(16px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 16px;
+  
+    box-shadow:
+      rgba(0, 0, 0, 0.12) 0px 2px 4px,
+      rgba(0, 0, 0, 0.08) 0px 8px 12px,
+      rgba(0, 0, 0, 0.08) 0px 8px 16px;
+  
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+  }
+  
+  .sidebar-navbar button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .sidebar-navbar button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-link);
+  }
