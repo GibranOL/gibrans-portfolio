@@ -3,6 +3,9 @@ import Sidebar from './components/Sidebar';
 import { useEffect, useState } from 'react';
 import Home from './components/Home';
 import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -50,6 +53,10 @@ function App() {
       // case 'projects': return <Projects />;
       default:
         return <Home />;
+      case 'projects':
+        return <Projects />;
+      case 'skills':
+        return <Skills />;
     }
   };
 
