@@ -16,7 +16,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="skills-section">
+    <section className="section-wrapper skills-section">
       <h2 className="skills-title">My Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (

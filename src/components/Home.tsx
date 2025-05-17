@@ -3,7 +3,7 @@ import '../styles/Home.css';
 
 export default function Home() {
   return (
-    <section className="home-container">
+    <section className="section-wrapper home-container">
       <img
         src={miFoto}
         alt="Gibran Oliva"

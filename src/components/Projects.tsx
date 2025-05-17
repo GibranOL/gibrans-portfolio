@@ -21,7 +21,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="projects-section">
+    <section className="section-wrapper projects-section">
       <h2 className="projects-title">My Projects</h2>
       <div className="projects-grid">
         {projectList.map((project, idx) => (

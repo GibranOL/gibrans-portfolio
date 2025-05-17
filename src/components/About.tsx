@@ -1,6 +1,9 @@
+import '../styles/About.css';
+
+
 export default function About() {
     return (
-      <section className="about-section">
+      <section className="section-wrapper about-section">
         <h2 className="section-title">About Me</h2>
         
         <p className="about-intro">

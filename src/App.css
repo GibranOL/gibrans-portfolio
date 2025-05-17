@@ -13,6 +13,11 @@ body, html {
   color: var(--color-text);
   min-height: 100%;
   overflow-x: hidden;
+  
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -45,29 +50,9 @@ body, html {
   z-index: 2;
 }
 
-
-/* ABOUT STYLING */
-
-.about-section {
-  padding: 4rem 1.5rem;
-  max-width: 800px;
+.page-wrapper {
+  width: 80%;
   margin: 0 auto;
-  text-align: left;
-  color: var(--color-text);
-}
-
-.section-title {
-  font-size: 2rem;
-  color: var(--color-title);
-  margin-bottom: 1rem;
-}
-
-.about-intro,
-.about-education,
-.about-background,
-.about-now,
-.about-personal {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  padding-inline: 0; /* puedes ajustar si quieres espacio interno */
+  box-sizing: border-box;
 }

@@ -1,17 +1,16 @@
 import '../styles/Sidebar.css';
+import avatar from '../assets/images/prosentacion_corto.png'; // Usa tu imagen
 
-interface SidebarProps {
-  setActiveSection: (section: string) => void;
-}
-
-export default function Sidebar({ setActiveSection }: SidebarProps) {
+export default function Sidebar() {
   return (
     <div className="sidebar-navbar">
-          <button onClick={() => setActiveSection('home')}>Home</button>
-          <button onClick={() => setActiveSection('about')}>Sobre mí</button>
-          <button onClick={() => setActiveSection('projects')}>Proyectos</button>
-          <button onClick={() => setActiveSection('skills')}>Habilidades</button>
-          <button onClick={() => setActiveSection('contact')}>Contacto</button>
+      <img src={avatar} alt="Gibran avatar" className="sidebar-avatar" />
+      <div className="sidebar-links">
+        <a href="#home">{' Home'}</a>
+        <a href="#about">{' About Me'}</a>
+        <a href="#skills">{' Skills'}</a>
+        <a href="#projects">{' Projects'}</a>
+      </div>
     </div>
   );
 }
