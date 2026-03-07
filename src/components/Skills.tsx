@@ -88,7 +88,7 @@ export default function Skills() {
             <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
             <span className="text-sm font-medium text-slate-700 dark:text-gray-300">
               <span className="text-slate-900 dark:text-white font-bold">{t('skills.learning')}: </span> 
-              Advanced Component Testing
+              {t('skills.learningTopic')}
             </span>
           </div>
         </motion.div>

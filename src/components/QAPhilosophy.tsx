@@ -47,7 +47,7 @@ export default function QAPhilosophy() {
               transition={{ duration: 0.5, delay: idx * 0.15 }}
               className="relative p-[1px] rounded-2xl bg-gradient-to-b from-white/10 to-transparent overflow-hidden group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl ${principle.color}" />
+              <div className={`absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl ${principle.color}`} />
               <div className="relative bg-background p-8 rounded-[15px] h-full flex flex-col items-center text-center z-10">
                 <div className="mb-6 p-4 bg-slate-200 dark:bg-white/5 rounded-full inline-block">
                   {principle.icon}

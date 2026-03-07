@@ -40,7 +40,8 @@
     "ai": "Agentic Workflows",
     "frontend": "AI Automation Strategy",
     "tools": "API Testing",
-    "learning": "Prompt Engineering"
+    "learning": "Actualmente Aprendiendo",
+    "learningTopic": "Testing Avanzado de Componentes"
   },
   "projects": {
     "title": "Proyectos Destacados",
@@ -66,9 +67,9 @@
     "troudDesc": "Plataforma de logística diseñada para optimizar rutas comerciales mediante integración de datos en tiempo real. Implementación de Stress Testing (99.9% de precisión), TomTom API y MongoDB.",
     "learnezDesc": "Ecosistema educativo SaaS complejo con visualización avanzada de datos para el seguimiento del progreso. Validación de RBAC y pruebas de ciclo de vida de API con Postman.",
     "facepointsDesc": "Sistema de lealtad e identificación diseñado con enfoque en confiabilidad total sin conexión (Offline-First). Validación de identificadores únicos por tienda y diseño en MongoDB.",
-    "truenorthDesc": "Aplicación web en React/TypeScript. Marcar como \"En Desarrollo\".",
-    "tarotDesc": "Construida usando Gemini CLI como un experimento de desarrollo basado en agentes. Proyecto personal.",
-    "eduAppDesc": "Plataforma para que estudiantes internacionales encuentren e se inscriban en programas escolares en Canadá. Incluye lógica fiscal específica de la provincia."
+    "truenorthDesc": "Aplicación web en React y TypeScript diseñada para la navegación de rutas académicas.",
+    "tarotDesc": "Experimento de desarrollo basado en agentes utilizando Gemini CLI para generación de lógica y contenido.",
+    "eduAppDesc": "Plataforma para que estudiantes internacionales encuentren y se inscriban en programas escolares en Canadá. Incluye lógica fiscal específica de la provincia."
   },
   "philosophy": {
     "title": "Filosofía QA",

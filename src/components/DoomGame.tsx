@@ -20,7 +20,7 @@ export default function DoomGame() {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-8 text-glow-primary text-red-100 uppercase uppercase">
+          <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-8 text-glow-primary text-red-100 uppercase">
             {t('doom.title')}
           </h2>
 

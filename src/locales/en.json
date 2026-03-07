@@ -40,7 +40,8 @@
     "ai": "Agentic Workflows",
     "frontend": "AI Automation Strategy",
     "tools": "API Testing",
-    "learning": "Prompt Engineering"
+    "learning": "Currently Learning",
+    "learningTopic": "Advanced Component Testing"
   },
   "projects": {
     "title": "Featured Projects",
@@ -66,8 +67,8 @@
     "troudDesc": "Logistics platform designed to optimize commercial routes via real-time data integration. Implemented high-concurrency stress testing (99.9% accuracy), TomTom API, and MongoDB.",
     "learnezDesc": "Complex educational SaaS ecosystem with advanced data visualization for progress tracking. Rigorous RBAC validation and API lifecycle testing via Postman.",
     "facepointsDesc": "Offline-first identity and loyalty system designed for total reliability. Optimized QR scanning logic for 100% offline functionality and designed high-frequency scanning schemas in MongoDB.",
-    "truenorthDesc": "React/TypeScript web application. Mark as \"In Development\".",
-    "tarotDesc": "Built using Gemini CLI as an agentic development experiment. Personal project.",
+    "truenorthDesc": "React and TypeScript web application designed for pathway navigation.",
+    "tarotDesc": "Agentic development experiment utilizing the Gemini CLI for automated logic and content generation.",
     "eduAppDesc": "Platform for international students to find and enroll in Canadian school programs. Includes province-specific tax logic."
   },
   "philosophy": {

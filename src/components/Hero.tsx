@@ -15,6 +15,7 @@ export default function Hero() {
   ];
 
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+  const [imgError, setImgError] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,13 +25,11 @@ export default function Hero() {
   }, [titles.length]);
 
   const handleAvatarLongPress = () => {
-    // Basic Easter egg #3 implementation
-    alert("You found a secret! (Long Press GO)");
+    console.log('🥚 Easter egg #3: Long Press GO');
   };
 
   const handleDotClick = () => {
-    // Basic Easter egg #2 implementation
-    alert("Wait, how did you find that dot? (Dot Click)");
+    console.log('🥚 Easter egg #2: Dot Click');
   };
 
   return (
@@ -116,16 +115,16 @@ export default function Hero() {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-2xl opacity-50 group-hover:opacity-70 transition-opacity duration-500" />
               <div className="relative w-64 h-64 md:w-80 md:h-80 bg-background border-2 border-slate-300 dark:border-white/10 rounded-full flex items-center justify-center overflow-hidden z-10 transition-transform duration-500 group-hover:scale-105 group-hover:border-primary/50">
-                <img 
-                  src={profilePic} 
-                  alt="Gibran Oliva" 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  onError={(e) => {
-                    // Fallback to GO initials if image fails to load
-                    (e.target as HTMLElement).style.display = 'none';
-                    (e.target as HTMLElement).parentElement!.innerHTML += '<span class="text-7xl font-black text-slate-300 dark:text-white/20 group-hover:text-primary/80 transition-colors duration-500 tracking-tighter">GO</span>';
-                  }}
-                />
+                {imgError ? (
+                  <span className="text-7xl font-black text-slate-300 dark:text-white/20 group-hover:text-primary/80 transition-colors duration-500 tracking-tighter">GO</span>
+                ) : (
+                  <img 
+                    src={profilePic} 
+                    alt="Gibran Oliva" 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={() => setImgError(true)}
+                  />
+                )}
               </div>
             </div>
           </motion.div>

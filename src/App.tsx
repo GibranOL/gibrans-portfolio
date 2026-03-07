@@ -25,9 +25,8 @@ export default function App() {
         <QAPhilosophy />
         <Passions />
         <DoomGame />
+        <Contact />
       </main>
-
-      <Contact />
     </div>
   );
 }

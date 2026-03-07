@@ -70,7 +70,7 @@ export default function Services() {
                 </p>
                 
                 <div className="mt-8 pt-6 border-t border-slate-200 dark:border-white/5 flex justify-end">
-                  <a href="#contact" className="inline-flex items-center gap-2 text-sm font-bold text-slate-700 dark:text-gray-300 group-hover:text-slate-900 dark:text-white transition-colors">
+                  <a href="#contact" className="inline-flex items-center gap-2 text-sm font-bold text-slate-700 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors">
                     {t('services.cta')}
                     <ArrowRight size={16} className="text-primary group-hover:translate-x-1 transition-transform" />
                   </a>
