@@ -1,0 +1,93 @@
+import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+
+export default function Skills() {
+  const { t } = useTranslation();
+
+  const skillCategories = [
+    {
+      title: t('skills.qa'),
+      skills: ['Playwright', 'pytest', 'Manual Testing', 'Accessibility Testing']
+    },
+    {
+      title: t('skills.ai'),
+      skills: ['n8n', 'Claude/Anthropic SDK', 'Gemini CLI', 'Agentic Workflows']
+    },
+    {
+      title: t('skills.frontend'),
+      skills: ['React', 'TypeScript', 'Tailwind CSS']
+    },
+    {
+      title: t('skills.tools'),
+      skills: ['Git', 'GitHub Actions', 'Cursor', 'VS Code']
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-background border-t border-white/5 relative overflow-hidden">
+      
+      {/* Decorative bg element */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
+
+      <div className="container mx-auto px-6 md:px-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-glow-secondary">
+            {t('skills.title')}
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {skillCategories.map((category, idx) => (
+            <motion.div 
+              key={idx}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: idx * 0.1 }}
+              className="bg-white/5 border border-white/10 p-6 rounded-2xl relative group hover:bg-white/[0.07] transition-colors"
+            >
+              <h3 className="text-xl font-bold mb-6 text-white border-b border-white/10 pb-4">
+                {category.title}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill, sIdx) => (
+                  <span 
+                    key={sIdx} 
+                    className="px-3 py-1.5 bg-background border border-white/5 rounded-md text-sm text-gray-300 group-hover:border-secondary/30 transition-colors"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Currently Learning badge */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+          className="mt-16 flex justify-center"
+        >
+          <div className="inline-flex items-center gap-3 px-6 py-3 bg-secondary/10 border border-secondary/30 rounded-full relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/20 to-transparent -translate-x-full group-hover:animate-[shimmer_2s_infinite]" />
+            <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
+            <span className="text-sm font-medium text-gray-300">
+              <span className="text-white font-bold">{t('skills.learning')}: </span> 
+              Advanced Component Testing
+            </span>
+          </div>
+        </motion.div>
+
+      </div>
+    </section>
+  );
+}

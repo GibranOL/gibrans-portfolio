@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "AI-First QA Engineer",
+    "title2": "Bug Hunter",
+    "title3": "Automation Architect",
+    "title4": "Detail Finder",
+    "headline": "I make sure your software works — before your users find out it doesn't.",
+    "subheadline": "QA Consulting · Automation Setup · AI-Powered Testing · n8n Workflows",
+    "ctaPrimary": "Hire Me",
+    "ctaSecondary": "See My Work"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "Mexican QA engineer and developer based in Vancouver. Studied at Langara College. Building a career at the intersection of AI and quality engineering. 1+ year of professional QA experience, actively specializing in AI-First testing approaches.",
+    "philosophy": "I find hidden details — not just in software, but in life. Every bug tells a story."
+  },
+  "services": {
+    "title": "Services",
+    "card1Title": "QA Consulting & Audit",
+    "card1Desc": "I review your product's quality end-to-end: test coverage, edge cases, user flows, and risk areas. You get a clear report and an action plan.",
+    "card2Title": "QA Automation Setup",
+    "card2Desc": "I build your automated test suite from scratch using Playwright, integrate it with GitHub Actions, and set up pipelines so every deploy is safe.",
+    "card3Title": "AI-Powered Testing Strategies",
+    "card3Desc": "I design testing strategies that leverage AI to find smarter bugs, faster. Ideal for teams that want to move fast without breaking things.",
+    "card4Title": "Workflow Automation with n8n",
+    "card4Desc": "I automate your repetitive business processes using n8n — connecting your tools, reducing manual work, and saving your team hours every week.",
+    "cta": "Let's Talk",
+    "footer": "Whether you're a startup, a growing team, or a recruiter — I'm available for freelance projects and full-time hybrid roles in Vancouver."
+  },
+  "skills": {
+    "title": "Skills & Stack",
+    "qa": "QA & Testing",
+    "ai": "AI & Automation",
+    "frontend": "Frontend",
+    "tools": "Tools",
+    "learning": "Currently Learning"
+  },
+  "projects": {
+    "title": "Projects",
+    "completed": "Completed",
+    "wip": "In Progress (WIP)",
+    "tags": {
+      "mobile": "Mobile App",
+      "maps": "Maps API",
+      "ux": "UX",
+      "edtech": "EdTech",
+      "accessibility": "Accessibility",
+      "social": "Social Impact",
+      "android": "Android",
+      "qr": "QR",
+      "localbiz": "Local Business",
+      "react": "React",
+      "ts": "TypeScript",
+      "wip": "WIP",
+      "ai": "AI",
+      "gemini": "Gemini CLI",
+      "business": "Business"
+    },
+    "troudDesc": "Hazard & mobility reporting app. Users report street problems (potholes, closures, construction) on a live map, then generate routes that avoid those hazards. Built with TomTom Maps API.",
+    "learnezDesc": "Inclusive learning platform for children with visual impairments, ADHD, and reading difficulties. Diagnostic onboarding routes children to specialized educators based on their needs.",
+    "facepointsDesc": "Android loyalty app supporting local businesses. Customers earn and redeem points via QR code scanning.",
+    "truenorthDesc": "React/TypeScript web application. Mark as \"In Development\".",
+    "tarotDesc": "Built using Gemini CLI as an agentic development experiment. Personal project.",
+    "eduAppDesc": "Platform for international students to find and enroll in Canadian school programs. Includes province-specific tax logic."
+  },
+  "philosophy": {
+    "title": "QA Philosophy",
+    "card1": "Test like a user, think like an attacker",
+    "card2": "Automation amplifies quality — it doesn't replace thinking",
+    "card3": "The best bug report tells a story",
+    "callout": "Currently building QA pipelines with Playwright + GitHub Actions CI/CD"
+  },
+  "passions": {
+    "title": "Passions",
+    "games": "Video Games & Speedrunning",
+    "gamesDesc": "I play to find what others miss",
+    "music": "Music",
+    "automation": "Automation",
+    "automationDesc": "If I do it twice, I automate it",
+    "details": "Detail Hunting",
+    "detailsDesc": "Easter eggs aren't just in games"
+  },
+  "doom": {
+    "title": "You've worked hard. Take a break.",
+    "cta": "Launch DOOM",
+    "disclaimer": "Powered by js-dos + Doom Shareware (id Software, 1997)"
+  },
+  "easter": {
+    "hint": "👀 There are secrets here. Find them."
+  },
+  "contact": {
+    "title": "Let's Build Something That Works.",
+    "subtitle": "Open to freelance projects and hybrid QA roles in Vancouver.",
+    "email": "Email Me"
+  }
+}

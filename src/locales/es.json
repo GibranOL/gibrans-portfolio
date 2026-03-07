@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title1": "Ingeniero QA (AI-First)",
+    "title2": "Cazador de Bugs",
+    "title3": "Arquitecto de Automatización",
+    "title4": "Buscador de Detalles",
+    "headline": "Aseguro que tu software funcione — antes de que tus usuarios descubran lo contrario.",
+    "subheadline": "Consultoría QA · Configuración de Automatización · Pruebas con IA · Workflows en n8n",
+    "ctaPrimary": "Contrátame",
+    "ctaSecondary": "Ver mi Trabajo"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "bio": "Ingeniero QA y desarrollador mexicano basado en Vancouver. Estudié en Langara College. Construyendo una carrera en la intersección de IA y la ingeniería de calidad. Más de 1 año de experiencia profesional en QA, especializándome activamente en enfoques de pruebas centradas en IA.",
+    "philosophy": "Encuentro detalles ocultos — no solo en el software, sino en la vida. Cada bug cuenta una historia."
+  },
+  "services": {
+    "title": "Servicios",
+    "card1Title": "Consultoría y Auditoría QA",
+    "card1Desc": "Reviso la calidad de tu producto de principio a fin: cobertura de pruebas, casos extremos, flujos de usuario y áreas de riesgo. Obtienes un reporte claro y un plan de acción.",
+    "card2Title": "Automatización QA",
+    "card2Desc": "Construyo tu suite de pruebas automatizadas desde cero usando Playwright, lo integro con GitHub Actions, y configuro pipelines para que cada despliegue sea seguro.",
+    "card3Title": "Estrategias de Pruebas con IA",
+    "card3Desc": "Diseño estrategias de pruebas que aprovechan la IA para encontrar bugs más inteligentes, más rápido. Ideal para equipos que quieren moverse rápido sin romper cosas.",
+    "card4Title": "Automatización con n8n",
+    "card4Desc": "Automatizo tus procesos de negocio repetitivos con n8n — conectando tus herramientas, reduciendo el trabajo manual y ahorrando a tu equipo horas cada semana.",
+    "cta": "Hablemos",
+    "footer": "Ya seas una startup, un equipo en crecimiento o un reclutador — estoy disponible para proyectos freelance y roles híbridos a tiempo completo en Vancouver."
+  },
+  "skills": {
+    "title": "Habilidades y Stack",
+    "qa": "QA y Pruebas",
+    "ai": "IA y Automatización",
+    "frontend": "Frontend",
+    "tools": "Herramientas",
+    "learning": "Aprendiendo Actualmente"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "completed": "Completados",
+    "wip": "En Progreso (WIP)",
+    "tags": {
+      "mobile": "App Móvil",
+      "maps": "API de Mapas",
+      "ux": "UX",
+      "edtech": "EdTech",
+      "accessibility": "Accesibilidad",
+      "social": "Impacto Social",
+      "android": "Android",
+      "qr": "QR",
+      "localbiz": "Negocio Local",
+      "react": "React",
+      "ts": "TypeScript",
+      "wip": "WIP",
+      "ai": "IA",
+      "gemini": "Gemini CLI",
+      "business": "Negocios"
+    },
+    "troudDesc": "App de reportes de movilidad y riesgos. Los usuarios reportan problemas en las calles (baches, cierres, construcción) en un mapa en vivo, para generar rutas que evitan esos riesgos. Construida con TomTom Maps API.",
+    "learnezDesc": "Plataforma de aprendizaje inclusiva para niños con discapacidades visuales, TDAH y dificultades de lectura. Un diagnóstico inicial orienta a los niños a educadores especializados según sus necesidades.",
+    "facepointsDesc": "App de lealtad de Android para apoyar a negocios locales. Los clientes ganan y canjean puntos escaneando códigos QR.",
+    "truenorthDesc": "Aplicación web en React/TypeScript. Marcar como \"En Desarrollo\".",
+    "tarotDesc": "Construida usando Gemini CLI como un experimento de desarrollo basado en agentes. Proyecto personal.",
+    "eduAppDesc": "Plataforma para que estudiantes internacionales encuentren e se inscriban en programas escolares en Canadá. Incluye lógica fiscal específica de la provincia."
+  },
+  "philosophy": {
+    "title": "Filosofía QA",
+    "card1": "Prueba como usuario, piensa como atacante",
+    "card2": "La automatización amplifica la calidad — no reemplaza el pensamiento creativo",
+    "card3": "El mejor reporte de bug cuenta una historia",
+    "callout": "Actualmente construyendo pipelines de QA con Playwright + GitHub Actions CI/CD"
+  },
+  "passions": {
+    "title": "Pasiones",
+    "games": "Videojuegos y Speedrunning",
+    "gamesDesc": "Juego para encontrar lo que otros no ven",
+    "music": "Música",
+    "automation": "Automatización",
+    "automationDesc": "Si lo hago dos veces, lo automatizo",
+    "details": "Buscador de Detalles",
+    "detailsDesc": "Los easter eggs no solo están en los juegos"
+  },
+  "doom": {
+    "title": "Has trabajado duro. Tómate un descanso.",
+    "cta": "Jugar DOOM",
+    "disclaimer": "Potenciado por js-dos + Doom Shareware (id Software, 1997)"
+  },
+  "easter": {
+    "hint": "👀 Hay secretos aquí. Encuéntralos."
+  },
+  "contact": {
+    "title": "Construyamos algo que funcione.",
+    "subtitle": "Abierto a proyectos freelance y roles de QA híbridos en Vancouver.",
+    "email": "Escríbeme"
+  }
+}
