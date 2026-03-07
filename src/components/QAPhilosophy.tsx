@@ -17,14 +17,14 @@ export default function QAPhilosophy() {
       color: 'from-primary/20 to-transparent'
     },
     {
-      icon: <MessageSquareQuote size={32} className="text-white" />,
+      icon: <MessageSquareQuote size={32} className="text-slate-900 dark:text-white" />,
       text: t('philosophy.card3'),
       color: 'from-white/10 to-transparent'
     }
   ];
 
   return (
-    <section className="py-24 bg-[#0a0a0a] border-t border-white/5 relative overflow-hidden">
+    <section className="py-24 bg-slate-100 dark:bg-[#0a0a0a] border-t border-slate-200 dark:border-white/5 relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -49,10 +49,10 @@ export default function QAPhilosophy() {
             >
               <div className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl ${principle.color}" />
               <div className="relative bg-background p-8 rounded-[15px] h-full flex flex-col items-center text-center z-10">
-                <div className="mb-6 p-4 bg-white/5 rounded-full inline-block">
+                <div className="mb-6 p-4 bg-slate-200 dark:bg-white/5 rounded-full inline-block">
                   {principle.icon}
                 </div>
-                <h3 className="text-xl font-semibold leading-tight text-white/90">
+                <h3 className="text-xl font-semibold leading-tight text-slate-800 dark:text-white/90">
                   "{principle.text}"
                 </h3>
               </div>
@@ -68,9 +68,9 @@ export default function QAPhilosophy() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="max-w-3xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 border border-white/10 p-6 md:p-8 rounded-2xl text-center relative overflow-hidden group">
+          <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 border border-slate-300 dark:border-white/10 p-6 md:p-8 rounded-2xl text-center relative overflow-hidden group">
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-50 group-hover:opacity-100 transition-opacity" />
-            <p className="relative z-10 text-lg md:text-xl font-medium text-gray-200">
+            <p className="relative z-10 text-lg md:text-xl font-medium text-slate-800 dark:text-gray-200">
               ⚡ {t('philosophy.callout')}
             </p>
           </div>

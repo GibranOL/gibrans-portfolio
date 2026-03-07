@@ -6,14 +6,14 @@ export default function About() {
   const { t } = useTranslation();
 
   const interests = [
-    { icon: <Gamepad2 size={24} />, label: "Speedrunning" },
+    { icon: <Gamepad2 size={24} />, label: "Game Immersion" },
     { icon: <Music size={24} />, label: "Music" },
     { icon: <Cog size={24} />, label: "Automation" },
     { icon: <Search size={24} />, label: "Detail Hunting" }
   ];
 
   return (
-    <section id="about" className="py-24 bg-background relative border-t border-white/5">
+    <section id="about" className="py-24 bg-background relative border-t border-slate-200 dark:border-white/5">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export default function About() {
             
             {/* Bio */}
             <div>
-              <p className="text-lg text-gray-300 leading-relaxed mb-8">
+              <p className="text-lg text-slate-700 dark:text-gray-300 leading-relaxed mb-8">
                 {t('about.bio')}
               </p>
               
@@ -41,10 +41,10 @@ export default function About() {
                 {interests.map((interest, idx) => (
                   <div 
                     key={idx}
-                    className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-lg hover:border-secondary/50 hover:bg-secondary/10 transition-colors"
+                    className="flex items-center gap-2 bg-slate-200 dark:bg-white/5 border border-slate-300 dark:border-white/10 px-4 py-2 rounded-lg hover:border-secondary/50 hover:bg-secondary/10 transition-colors"
                   >
                     <span className="text-primary">{interest.icon}</span>
-                    <span className="text-sm font-medium text-gray-200">{interest.label}</span>
+                    <span className="text-sm font-medium text-slate-800 dark:text-gray-200">{interest.label}</span>
                   </div>
                 ))}
               </div>
@@ -53,9 +53,8 @@ export default function About() {
             {/* Philosophy Callout */}
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl blur-lg opacity-50" />
-              <div className="relative bg-[#111111] border border-white/10 p-8 rounded-2xl h-full flex flex-col justify-center">
-                <Search size={48} className="text-primary/20 absolute top-6 right-6" />
-                <blockquote className="text-xl md:text-2xl font-serif italic text-white/90 leading-snug">
+              <div className="relative bg-slate-100 dark:bg-[#111111] border border-slate-300 dark:border-white/10 p-8 rounded-2xl h-full flex flex-col justify-center">
+                <blockquote className="text-xl md:text-2xl font-serif italic text-slate-800 dark:text-white/90 leading-snug">
                   "{t('about.philosophy')}"
                 </blockquote>
               </div>

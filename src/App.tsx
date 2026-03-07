@@ -12,7 +12,7 @@ import EasterEggs from './components/EasterEggs';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-slate-900 dark:text-white">
       <EasterEggs />
       <Navbar />
       

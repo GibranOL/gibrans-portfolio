@@ -1,12 +1,21 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDark]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +47,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo / Brand */}
         <a href="#home" className="text-2xl font-bold tracking-tighter">
-          <span className="text-white">Gibran</span>
+          <span className="text-slate-900 dark:text-white">Gibran</span>
           <span className="text-primary">.</span>
         </a>
 
@@ -48,7 +57,7 @@ export default function Navbar() {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-gray-300 hover:text-white transition-colors text-sm uppercase tracking-wider font-semibold hover:text-glow-primary"
+              className="text-slate-700 dark:text-gray-300 hover:text-slate-900 dark:text-white transition-colors text-sm uppercase tracking-wider font-semibold hover:text-glow-primary"
             >
               {link.name}
             </a>
@@ -56,23 +65,40 @@ export default function Navbar() {
           
           <button 
             onClick={toggleLanguage}
-            className="flex items-center space-x-2 bg-secondary/30 hover:bg-secondary/50 text-white px-4 py-2 rounded-full transition-all border border-secondary/50 hover:border-white/20"
+            className="flex items-center space-x-2 bg-secondary/30 hover:bg-secondary/50 text-slate-900 dark:text-white px-4 py-2 rounded-full transition-all border border-secondary/50 hover:border-white/20"
           >
             <Globe size={16} />
             <span className="text-sm font-bold uppercase">{i18n.language.split('-')[0]} | {i18n.language.split('-')[0] === 'en' ? 'es' : 'en'}</span>
+          </button>
+
+          <button
+            onClick={() => setIsDark(!isDark)}
+            className="text-slate-700 dark:text-gray-300 hover:text-slate-900 dark:text-white transition-colors"
+            aria-label="Toggle Theme"
+          >
+            {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>
         </div>
 
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center space-x-4">
-          <button onClick={toggleLanguage} className="text-gray-300">
+          <button
+            onClick={() => setIsDark(!isDark)}
+            className="text-slate-700 dark:text-gray-300 hover:text-primary transition-colors"
+            aria-label="Toggle Theme"
+          >
+            {isDark ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+
+          <button onClick={toggleLanguage} className="text-slate-700 dark:text-gray-300">
             <Globe size={20} />
             <span className="sr-only">Toggle Language</span>
           </button>
           
           <button 
             onClick={() => setIsOpen(!isOpen)} 
-            className="text-white hover:text-primary transition-colors"
+            className="text-slate-900 dark:text-white hover:text-primary transition-colors"
+            aria-label={isOpen ? "Close Menu" : "Open Menu"}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -94,7 +120,7 @@ export default function Navbar() {
                   key={link.name} 
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-gray-300 hover:text-white py-2 text-lg uppercase tracking-wider font-semibold border-b border-white/5"
+                  className="text-slate-700 dark:text-gray-300 hover:text-slate-900 dark:text-white py-2 text-lg uppercase tracking-wider font-semibold border-b border-slate-200 dark:border-white/5"
                 >
                   {link.name}
                 </a>

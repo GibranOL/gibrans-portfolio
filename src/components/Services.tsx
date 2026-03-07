@@ -29,7 +29,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-[#0a0a0a] relative border-t border-white/5">
+    <section id="services" className="py-24 bg-slate-100 dark:bg-[#0a0a0a] relative border-t border-slate-200 dark:border-white/5">
       <div className="container mx-auto px-6 md:px-12">
         
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
@@ -41,7 +41,7 @@ export default function Services() {
             <div className="h-[2px] w-24 bg-gradient-to-r from-primary to-transparent" />
           </div>
           
-          <div className="max-w-xl text-gray-300 font-medium border-l-2 border-primary/30 pl-4 py-1">
+          <div className="max-w-xl text-slate-700 dark:text-gray-300 font-medium border-l-2 border-primary/30 pl-4 py-1">
             {t('services.footer')}
           </div>
         </div>
@@ -55,22 +55,22 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="min-w-[85vw] md:min-w-0 snap-center bg-background border border-white/10 p-8 rounded-2xl group hover:border-primary/50 transition-colors relative overflow-hidden"
+              className="min-w-[85vw] md:min-w-0 snap-center bg-background border border-slate-300 dark:border-white/10 p-8 rounded-2xl group hover:border-primary/50 transition-colors relative overflow-hidden"
             >
               {/* Subtle hover gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               <div className="relative z-10 flex flex-col h-full">
                 {service.icon}
-                <h3 className="text-xl font-bold mb-3 text-white">
+                <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white">
                   {service.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed flex-grow">
+                <p className="text-slate-700 dark:text-gray-300 leading-relaxed flex-grow">
                   {service.desc}
                 </p>
                 
-                <div className="mt-8 pt-6 border-t border-white/5 flex justify-end">
-                  <a href="#contact" className="inline-flex items-center gap-2 text-sm font-bold text-gray-300 group-hover:text-white transition-colors">
+                <div className="mt-8 pt-6 border-t border-slate-200 dark:border-white/5 flex justify-end">
+                  <a href="#contact" className="inline-flex items-center gap-2 text-sm font-bold text-slate-700 dark:text-gray-300 group-hover:text-slate-900 dark:text-white transition-colors">
                     {t('services.cta')}
                     <ArrowRight size={16} className="text-primary group-hover:translate-x-1 transition-transform" />
                   </a>

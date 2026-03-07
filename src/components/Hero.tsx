@@ -52,11 +52,11 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="w-full lg:w-3/5 text-center lg:text-left"
           >
-            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-300">
+            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-slate-700 dark:text-gray-300">
               Gibran Oliva
             </h2>
             
-            <div className="h-[40px] md:h-[60px] mb-6 flex items-center justify-center lg:justify-start">
+            <div className="h-[50px] md:h-[80px] mb-6 flex items-center justify-center lg:justify-start">
               <AnimatePresence mode="wait">
                 <motion.h3
                   key={currentTitleIndex}
@@ -64,7 +64,7 @@ export default function Hero() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5 }}
-                  className="text-3xl md:text-5xl font-bold gradient-text"
+                  className="text-3xl md:text-5xl font-bold gradient-text pb-2 px-1"
                 >
                   {titles[currentTitleIndex]}
                 </motion.h3>
@@ -79,14 +79,14 @@ export default function Hero() {
               >.</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-lg md:text-xl text-slate-700 dark:text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0">
               {t('hero.subheadline')}
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <a 
                 href="#contact"
-                className="group relative px-8 py-4 bg-primary text-white font-bold rounded-full overflow-hidden w-full sm:w-auto text-center border-glow-primary transition-transform hover:scale-105"
+                className="group relative px-8 py-4 bg-primary text-slate-900 dark:text-white font-bold rounded-full overflow-hidden w-full sm:w-auto text-center border-glow-primary transition-transform hover:scale-105"
               >
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
                 <span className="relative flex items-center justify-center gap-2">
@@ -97,7 +97,7 @@ export default function Hero() {
               
               <a 
                 href="#projects"
-                className="px-8 py-4 bg-transparent text-white font-bold rounded-full border border-gray-600 hover:border-white hover:bg-white/5 transition-all w-full sm:w-auto text-center"
+                className="px-8 py-4 bg-transparent text-slate-900 dark:text-white font-bold rounded-full border border-gray-600 hover:border-white hover:bg-slate-200 dark:bg-white/5 transition-all w-full sm:w-auto text-center"
               >
                 {t('hero.ctaSecondary')}
               </a>
@@ -115,7 +115,7 @@ export default function Hero() {
                  onContextMenu={(e) => { e.preventDefault(); handleAvatarLongPress(); }}
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-2xl opacity-50 group-hover:opacity-70 transition-opacity duration-500" />
-              <div className="relative w-64 h-64 md:w-80 md:h-80 bg-background border-2 border-white/10 rounded-full flex items-center justify-center overflow-hidden z-10 transition-transform duration-500 group-hover:scale-105 group-hover:border-primary/50">
+              <div className="relative w-64 h-64 md:w-80 md:h-80 bg-background border-2 border-slate-300 dark:border-white/10 rounded-full flex items-center justify-center overflow-hidden z-10 transition-transform duration-500 group-hover:scale-105 group-hover:border-primary/50">
                 <img 
                   src={profilePic} 
                   alt="Gibran Oliva" 
@@ -123,7 +123,7 @@ export default function Hero() {
                   onError={(e) => {
                     // Fallback to GO initials if image fails to load
                     (e.target as HTMLElement).style.display = 'none';
-                    (e.target as HTMLElement).parentElement!.innerHTML += '<span class="text-7xl font-black text-white/20 group-hover:text-primary/80 transition-colors duration-500 tracking-tighter">GO</span>';
+                    (e.target as HTMLElement).parentElement!.innerHTML += '<span class="text-7xl font-black text-slate-300 dark:text-white/20 group-hover:text-primary/80 transition-colors duration-500 tracking-tighter">GO</span>';
                   }}
                 />
               </div>

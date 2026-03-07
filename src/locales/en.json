@@ -19,7 +19,7 @@
   "about": {
     "title": "About Me",
     "bio": "I am a Senior Quality Engineer based in Vancouver, specializing in transforming traditional testing into Agentic QA Systems. With a solid foundation in web and mobile development from Langara College and experience in high-demand environments like Amber Studio, I bridge the gap between technical rigor and AI-driven efficiency.",
-    "philosophy": "\"The era of manual-only testing is over. I am here to build what comes next.\""
+    "philosophy": "\"Quality isn't just about finding bugs before release—it's about designing systems that prevent them from existing in the first place.\""
   },
   "services": {
     "title": "Services",
@@ -79,8 +79,8 @@
   },
   "passions": {
     "title": "Passions",
-    "games": "Video Games & Speedrunning",
-    "gamesDesc": "I play to find what others miss",
+    "games": "Video Games & Immersion",
+    "gamesDesc": "I play to understand the mechanics and get lost in the world",
     "music": "Music",
     "automation": "Automation",
     "automationDesc": "If I do it twice, I automate it",

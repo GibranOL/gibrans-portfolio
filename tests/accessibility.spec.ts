@@ -26,6 +26,9 @@ test.describe('Accessibility Tests', () => {
   });
 
   test('Should not have any automatically detectable WCAG accessibility violations', async ({ page }) => {
+    // Wait for framer-motion animations to complete before checking contrast
+    await page.waitForTimeout(1500);
+
     const accessibilityScanResults = await new AxeBuilder({ page })
       .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'])
       .analyze();

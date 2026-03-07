@@ -29,7 +29,7 @@ export default function Passions() {
   ];
 
   return (
-    <section className="py-24 bg-background relative border-t border-white/5">
+    <section className="py-24 bg-background relative border-t border-slate-200 dark:border-white/5">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function Passions() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               whileHover={{ y: -5 }}
-              className="bg-white/[0.02] border border-white/10 p-8 rounded-2xl flex flex-col items-center text-center group hover:bg-white/[0.04] hover:border-white/20 transition-all cursor-crosshair relative overflow-hidden"
+              className="bg-white/[0.02] border border-slate-300 dark:border-white/10 p-8 rounded-2xl flex flex-col items-center text-center group hover:bg-white/[0.04] hover:border-white/20 transition-all cursor-crosshair relative overflow-hidden"
             >
               {/* Animated glow on hover */}
               <div className="absolute -inset-2 bg-gradient-to-r from-primary/0 via-primary/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-[spin_4s_linear_infinite] blur-xl z-0" />
@@ -61,11 +61,11 @@ export default function Passions() {
                 <div className="transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
                   {passion.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-white">
+                <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white">
                   {passion.title}
                 </h3>
                 {passion.desc && (
-                  <p className="text-gray-300 font-medium">
+                  <p className="text-slate-700 dark:text-gray-300 font-medium">
                     "{passion.desc}"
                   </p>
                 )}

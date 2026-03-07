@@ -4,6 +4,13 @@
 
 @layer base {
   :root {
+    --background: #f8fafc; /* slate-50 */
+    --foreground: #0f172a; /* slate-900 */
+    --primary: #dc2626; /* red-600 */
+    --secondary: #2563eb; /* blue-600 */
+  }
+
+  .dark {
     --background: #0D0D0D;
     --foreground: #ffffff;
     --primary: #8B0000;

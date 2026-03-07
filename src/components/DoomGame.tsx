@@ -39,12 +39,12 @@ export default function DoomGame() {
                 
                 <button 
                   onClick={() => setIsPlaying(true)}
-                  className="px-10 py-5 bg-primary text-white font-black text-xl tracking-widest uppercase hover:bg-red-800 transition-colors border-2 border-red-500 hover:border-red-400 rounded-sm shadow-[0_0_20px_rgba(139,0,0,0.6)] hover:shadow-[0_0_30px_rgba(255,0,0,0.8)]"
+                  className="px-10 py-5 bg-primary text-slate-900 dark:text-white font-black text-xl tracking-widest uppercase hover:bg-red-800 transition-colors border-2 border-red-500 hover:border-red-400 rounded-sm shadow-[0_0_20px_rgba(139,0,0,0.6)] hover:shadow-[0_0_30px_rgba(255,0,0,0.8)]"
                 >
                   {t('doom.cta')}
                 </button>
                 
-                <p className="mt-8 text-xs text-gray-400 uppercase tracking-widest font-mono">
+                <p className="mt-8 text-xs text-slate-600 dark:text-gray-400 uppercase tracking-widest font-mono">
                   {t('doom.disclaimer')}
                 </p>
               </motion.div>
@@ -62,7 +62,7 @@ export default function DoomGame() {
                   </div>
                   <button 
                     onClick={() => setIsPlaying(false)}
-                    className="text-gray-300 hover:text-white transition-colors p-1"
+                    className="text-slate-700 dark:text-gray-300 hover:text-slate-900 dark:text-white transition-colors p-1"
                     title="Close"
                   >
                     <X size={20} />

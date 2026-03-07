@@ -6,7 +6,7 @@ export default function Contact() {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="py-24 bg-background relative border-t border-white/5 overflow-hidden">
+    <section id="contact" className="py-24 bg-background relative border-t border-slate-200 dark:border-white/5 overflow-hidden">
       
       {/* Decorative bg elements */}
       <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
@@ -24,7 +24,7 @@ export default function Contact() {
             {t('contact.title')}
           </h2>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto font-medium">
+          <p className="text-xl md:text-2xl text-slate-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto font-medium">
             {t('contact.subtitle')}
           </p>
 
@@ -43,7 +43,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/gibran-oliva/"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:border-secondary hover:bg-secondary/20 transition-all hover:scale-110"
+                className="w-14 h-14 rounded-full bg-slate-200 dark:bg-white/5 border border-slate-300 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-gray-300 hover:text-slate-900 dark:text-white hover:border-secondary hover:bg-secondary/20 transition-all hover:scale-110"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={28} />
@@ -52,7 +52,7 @@ export default function Contact() {
                 href="https://github.com/GibranOL"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:border-primary hover:bg-primary/20 transition-all hover:scale-110"
+                className="w-14 h-14 rounded-full bg-slate-200 dark:bg-white/5 border border-slate-300 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-gray-300 hover:text-slate-900 dark:text-white hover:border-primary hover:bg-primary/20 transition-all hover:scale-110"
                 aria-label="GitHub"
               >
                 <Github size={28} />
@@ -62,7 +62,7 @@ export default function Contact() {
         </motion.div>
       </div>
 
-      <div className="mt-32 pt-8 border-t border-white/10 text-center text-gray-400 text-sm">
+      <div className="mt-32 pt-8 border-t border-slate-300 dark:border-white/10 text-center text-slate-600 dark:text-gray-400 text-sm">
         <p>© {new Date().getFullYear()} Gibran Oliva. Built with React + Tailwind.</p>
         <p className="mt-2 flex justify-center items-center gap-2">
           {t('easter.hint')}
