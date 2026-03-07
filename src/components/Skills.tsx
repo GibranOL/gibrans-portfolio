@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { ShieldCheck, Workflow, Bot, Webhook } from 'lucide-react';
 
 export default function Skills() {
   const { t } = useTranslation();
@@ -7,19 +8,23 @@ export default function Skills() {
   const skillCategories = [
     {
       title: t('skills.qa'),
-      skills: ['Playwright', 'pytest', 'Manual Testing', 'Accessibility Testing']
+      icon: <ShieldCheck size={32} className="text-white mb-4 group-hover:text-primary transition-colors duration-300 animate-pulse" />,
+      skills: ['Lifecycle Management', 'High-Signal Reports', 'Playwright', 'Test Coverage', 'Accessibility']
     },
     {
       title: t('skills.ai'),
-      skills: ['n8n', 'Claude/Anthropic SDK', 'Gemini CLI', 'Agentic Workflows']
+      icon: <Workflow size={32} className="text-white mb-4 group-hover:text-secondary transition-colors duration-300" />,
+      skills: ['n8n', 'Gemini API', 'Claude API', 'Autonomous Agents', 'Orchestration']
     },
     {
       title: t('skills.frontend'),
-      skills: ['React', 'TypeScript', 'Tailwind CSS']
+      icon: <Bot size={32} className="text-white mb-4 group-hover:text-primary transition-colors duration-300" />,
+      skills: ['AI Architectures', 'Prompt Engineering', 'Frontier Models', 'Framework Design']
     },
     {
       title: t('skills.tools'),
-      skills: ['Git', 'GitHub Actions', 'Cursor', 'VS Code']
+      icon: <Webhook size={32} className="text-white mb-4 group-hover:text-secondary transition-colors duration-300" />,
+      skills: ['Postman', 'REST / GraphQL', 'MongoDB', 'Backend Validation', 'CI/CD']
     }
   ];
 
@@ -52,6 +57,7 @@ export default function Skills() {
               transition={{ duration: 0.4, delay: idx * 0.1 }}
               className="bg-white/5 border border-white/10 p-6 rounded-2xl relative group hover:bg-white/[0.07] transition-colors"
             >
+              {category.icon}
               <h3 className="text-xl font-bold mb-6 text-white border-b border-white/10 pb-4">
                 {category.title}
               </h3>

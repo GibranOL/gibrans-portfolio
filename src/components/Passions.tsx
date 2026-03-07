@@ -65,7 +65,7 @@ export default function Passions() {
                   {passion.title}
                 </h3>
                 {passion.desc && (
-                  <p className="text-gray-400 font-medium">
+                  <p className="text-gray-300 font-medium">
                     "{passion.desc}"
                   </p>
                 )}

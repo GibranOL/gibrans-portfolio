@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
+import profilePic from '../assets/profile.png';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -51,7 +52,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="w-full lg:w-3/5 text-center lg:text-left"
           >
-            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-400">
+            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-300">
               Gibran Oliva
             </h2>
             
@@ -78,7 +79,7 @@ export default function Hero() {
               >.</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0">
               {t('hero.subheadline')}
             </p>
 
@@ -112,13 +113,19 @@ export default function Hero() {
           >
             <div className="relative group cursor-pointer"
                  onContextMenu={(e) => { e.preventDefault(); handleAvatarLongPress(); }}
-                 // Basic long press logic for mobile could be added here
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-2xl opacity-50 group-hover:opacity-70 transition-opacity duration-500" />
               <div className="relative w-64 h-64 md:w-80 md:h-80 bg-background border-2 border-white/10 rounded-full flex items-center justify-center overflow-hidden z-10 transition-transform duration-500 group-hover:scale-105 group-hover:border-primary/50">
-                <span className="text-7xl font-black text-white/20 group-hover:text-primary/80 transition-colors duration-500 tracking-tighter">
-                  GO
-                </span>
+                <img 
+                  src={profilePic} 
+                  alt="Gibran Oliva" 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  onError={(e) => {
+                    // Fallback to GO initials if image fails to load
+                    (e.target as HTMLElement).style.display = 'none';
+                    (e.target as HTMLElement).parentElement!.innerHTML += '<span class="text-7xl font-black text-white/20 group-hover:text-primary/80 transition-colors duration-500 tracking-tighter">GO</span>';
+                  }}
+                />
               </div>
             </div>
           </motion.div>

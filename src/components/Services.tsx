@@ -41,7 +41,7 @@ export default function Services() {
             <div className="h-[2px] w-24 bg-gradient-to-r from-primary to-transparent" />
           </div>
           
-          <div className="max-w-xl text-gray-400 font-medium border-l-2 border-primary/30 pl-4 py-1">
+          <div className="max-w-xl text-gray-300 font-medium border-l-2 border-primary/30 pl-4 py-1">
             {t('services.footer')}
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Services() {
                 <h3 className="text-xl font-bold mb-3 text-white">
                   {service.title}
                 </h3>
-                <p className="text-gray-400 leading-relaxed flex-grow">
+                <p className="text-gray-300 leading-relaxed flex-grow">
                   {service.desc}
                 </p>
                 

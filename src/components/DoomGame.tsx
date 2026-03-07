@@ -44,7 +44,7 @@ export default function DoomGame() {
                   {t('doom.cta')}
                 </button>
                 
-                <p className="mt-8 text-xs text-gray-500 uppercase tracking-widest font-mono">
+                <p className="mt-8 text-xs text-gray-400 uppercase tracking-widest font-mono">
                   {t('doom.disclaimer')}
                 </p>
               </motion.div>
@@ -62,7 +62,7 @@ export default function DoomGame() {
                   </div>
                   <button 
                     onClick={() => setIsPlaying(false)}
-                    className="text-gray-400 hover:text-white transition-colors p-1"
+                    className="text-gray-300 hover:text-white transition-colors p-1"
                     title="Close"
                   >
                     <X size={20} />

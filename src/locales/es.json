@@ -7,19 +7,19 @@
     "contact": "Contacto"
   },
   "hero": {
-    "title1": "Ingeniero QA (AI-First)",
-    "title2": "Cazador de Bugs",
-    "title3": "Arquitecto de Automatización",
-    "title4": "Buscador de Detalles",
-    "headline": "Aseguro que tu software funcione — antes de que tus usuarios descubran lo contrario.",
-    "subheadline": "Consultoría QA · Configuración de Automatización · Pruebas con IA · Workflows en n8n",
+    "title1": "Senior Quality Engineer 2.0",
+    "title2": "AI Automation",
+    "title3": "Frontier Models",
+    "title4": "Agentic Systems",
+    "headline": "Transforming Manual Testing into Agentic Systems",
+    "subheadline": "Agentic Quality Assurance · Strategic AI Integration · Full-Stack QA",
     "ctaPrimary": "Contrátame",
     "ctaSecondary": "Ver mi Trabajo"
   },
   "about": {
     "title": "Sobre Mí",
-    "bio": "Ingeniero QA y desarrollador mexicano basado en Vancouver. Estudié en Langara College. Construyendo una carrera en la intersección de IA y la ingeniería de calidad. Más de 1 año de experiencia profesional en QA, especializándome activamente en enfoques de pruebas centradas en IA.",
-    "philosophy": "Encuentro detalles ocultos — no solo en el software, sino en la vida. Cada bug cuenta una historia."
+    "bio": "Soy un Senior Quality Engineer basado en Vancouver, especializado en transformar el testing tradicional en Agentic QA Systems. Con una sólida base en desarrollo web y móvil de Langara College y experiencia en entornos de alta exigencia como Amber Studio, cierro la brecha entre el rigor técnico y la eficiencia impulsada por IA.",
+    "philosophy": "\"The era of manual-only testing is over. I am here to build what comes next.\""
   },
   "services": {
     "title": "Servicios",
@@ -35,37 +35,37 @@
     "footer": "Ya seas una startup, un equipo en crecimiento o un reclutador — estoy disponible para proyectos freelance y roles híbridos a tiempo completo en Vancouver."
   },
   "skills": {
-    "title": "Habilidades y Stack",
-    "qa": "QA y Pruebas",
-    "ai": "IA y Automatización",
-    "frontend": "Frontend",
-    "tools": "Herramientas",
-    "learning": "Aprendiendo Actualmente"
+    "title": "Core Expertise & Skills",
+    "qa": "Quality Assurance",
+    "ai": "Agentic Workflows",
+    "frontend": "AI Automation Strategy",
+    "tools": "API Testing",
+    "learning": "Prompt Engineering"
   },
   "projects": {
-    "title": "Proyectos",
+    "title": "Proyectos Destacados",
     "completed": "Completados",
     "wip": "En Progreso (WIP)",
     "tags": {
       "mobile": "App Móvil",
-      "maps": "API de Mapas",
-      "ux": "UX",
+      "maps": "Logistics",
+      "ux": "Identidad",
       "edtech": "EdTech",
-      "accessibility": "Accesibilidad",
-      "social": "Impacto Social",
+      "accessibility": "SaaS",
+      "social": "Routing",
       "android": "Android",
-      "qr": "QR",
-      "localbiz": "Negocio Local",
-      "react": "React",
-      "ts": "TypeScript",
+      "qr": "Offline-First",
+      "localbiz": "RBAC",
+      "react": "KPIs",
+      "ts": "Dashboard",
       "wip": "WIP",
       "ai": "IA",
-      "gemini": "Gemini CLI",
-      "business": "Negocios"
+      "gemini": "TomTom API",
+      "business": "MongoDB"
     },
-    "troudDesc": "App de reportes de movilidad y riesgos. Los usuarios reportan problemas en las calles (baches, cierres, construcción) en un mapa en vivo, para generar rutas que evitan esos riesgos. Construida con TomTom Maps API.",
-    "learnezDesc": "Plataforma de aprendizaje inclusiva para niños con discapacidades visuales, TDAH y dificultades de lectura. Un diagnóstico inicial orienta a los niños a educadores especializados según sus necesidades.",
-    "facepointsDesc": "App de lealtad de Android para apoyar a negocios locales. Los clientes ganan y canjean puntos escaneando códigos QR.",
+    "troudDesc": "Plataforma de logística diseñada para optimizar rutas comerciales mediante integración de datos en tiempo real. Implementación de Stress Testing (99.9% de precisión), TomTom API y MongoDB.",
+    "learnezDesc": "Ecosistema educativo SaaS complejo con visualización avanzada de datos para el seguimiento del progreso. Validación de RBAC y pruebas de ciclo de vida de API con Postman.",
+    "facepointsDesc": "Sistema de lealtad e identificación diseñado con enfoque en confiabilidad total sin conexión (Offline-First). Validación de identificadores únicos por tienda y diseño en MongoDB.",
     "truenorthDesc": "Aplicación web en React/TypeScript. Marcar como \"En Desarrollo\".",
     "tarotDesc": "Construida usando Gemini CLI como un experimento de desarrollo basado en agentes. Proyecto personal.",
     "eduAppDesc": "Plataforma para que estudiantes internacionales encuentren e se inscriban en programas escolares en Canadá. Incluye lógica fiscal específica de la provincia."
@@ -90,7 +90,10 @@
   "doom": {
     "title": "Has trabajado duro. Tómate un descanso.",
     "cta": "Jugar DOOM",
-    "disclaimer": "Potenciado por js-dos + Doom Shareware (id Software, 1997)"
+    "disclaimer": "Potenciado por js-dos + Doom Shareware (id Software, 1997)",
+    "playTitle": "Inicializar Bypass de Seguridad",
+    "playDesc": "Accediendo a sector no autorizado. Advertencia: El ejecutable contiene acción recursiva intensa y violencia nostálgica.",
+    "controls": "Controles"
   },
   "easter": {
     "hint": "👀 Hay secretos aquí. Encuéntralos."

@@ -7,19 +7,19 @@
     "contact": "Contact"
   },
   "hero": {
-    "title1": "AI-First QA Engineer",
-    "title2": "Bug Hunter",
-    "title3": "Automation Architect",
-    "title4": "Detail Finder",
-    "headline": "I make sure your software works — before your users find out it doesn't.",
-    "subheadline": "QA Consulting · Automation Setup · AI-Powered Testing · n8n Workflows",
+    "title1": "Senior Quality Engineer 2.0",
+    "title2": "AI Automation",
+    "title3": "Frontier Models",
+    "title4": "Agentic Systems",
+    "headline": "Transforming Manual Testing into Agentic Systems",
+    "subheadline": "Agentic Quality Assurance · Strategic AI Integration · Full-Stack QA",
     "ctaPrimary": "Hire Me",
     "ctaSecondary": "See My Work"
   },
   "about": {
     "title": "About Me",
-    "bio": "Mexican QA engineer and developer based in Vancouver. Studied at Langara College. Building a career at the intersection of AI and quality engineering. 1+ year of professional QA experience, actively specializing in AI-First testing approaches.",
-    "philosophy": "I find hidden details — not just in software, but in life. Every bug tells a story."
+    "bio": "I am a Senior Quality Engineer based in Vancouver, specializing in transforming traditional testing into Agentic QA Systems. With a solid foundation in web and mobile development from Langara College and experience in high-demand environments like Amber Studio, I bridge the gap between technical rigor and AI-driven efficiency.",
+    "philosophy": "\"The era of manual-only testing is over. I am here to build what comes next.\""
   },
   "services": {
     "title": "Services",
@@ -35,37 +35,37 @@
     "footer": "Whether you're a startup, a growing team, or a recruiter — I'm available for freelance projects and full-time hybrid roles in Vancouver."
   },
   "skills": {
-    "title": "Skills & Stack",
-    "qa": "QA & Testing",
-    "ai": "AI & Automation",
-    "frontend": "Frontend",
-    "tools": "Tools",
-    "learning": "Currently Learning"
+    "title": "Core Expertise & Skills",
+    "qa": "Quality Assurance",
+    "ai": "Agentic Workflows",
+    "frontend": "AI Automation Strategy",
+    "tools": "API Testing",
+    "learning": "Prompt Engineering"
   },
   "projects": {
-    "title": "Projects",
+    "title": "Featured Projects",
     "completed": "Completed",
     "wip": "In Progress (WIP)",
     "tags": {
       "mobile": "Mobile App",
-      "maps": "Maps API",
-      "ux": "UX",
+      "maps": "Logistics",
+      "ux": "Identity",
       "edtech": "EdTech",
-      "accessibility": "Accessibility",
-      "social": "Social Impact",
+      "accessibility": "SaaS",
+      "social": "Routing",
       "android": "Android",
-      "qr": "QR",
-      "localbiz": "Local Business",
-      "react": "React",
-      "ts": "TypeScript",
+      "qr": "Offline-First",
+      "localbiz": "RBAC",
+      "react": "KPIs",
+      "ts": "Dashboard",
       "wip": "WIP",
       "ai": "AI",
-      "gemini": "Gemini CLI",
-      "business": "Business"
+      "gemini": "TomTom API",
+      "business": "MongoDB"
     },
-    "troudDesc": "Hazard & mobility reporting app. Users report street problems (potholes, closures, construction) on a live map, then generate routes that avoid those hazards. Built with TomTom Maps API.",
-    "learnezDesc": "Inclusive learning platform for children with visual impairments, ADHD, and reading difficulties. Diagnostic onboarding routes children to specialized educators based on their needs.",
-    "facepointsDesc": "Android loyalty app supporting local businesses. Customers earn and redeem points via QR code scanning.",
+    "troudDesc": "Logistics platform designed to optimize commercial routes via real-time data integration. Implemented high-concurrency stress testing (99.9% accuracy), TomTom API, and MongoDB.",
+    "learnezDesc": "Complex educational SaaS ecosystem with advanced data visualization for progress tracking. Rigorous RBAC validation and API lifecycle testing via Postman.",
+    "facepointsDesc": "Offline-first identity and loyalty system designed for total reliability. Optimized QR scanning logic for 100% offline functionality and designed high-frequency scanning schemas in MongoDB.",
     "truenorthDesc": "React/TypeScript web application. Mark as \"In Development\".",
     "tarotDesc": "Built using Gemini CLI as an agentic development experiment. Personal project.",
     "eduAppDesc": "Platform for international students to find and enroll in Canadian school programs. Includes province-specific tax logic."
@@ -90,7 +90,10 @@
   "doom": {
     "title": "You've worked hard. Take a break.",
     "cta": "Launch DOOM",
-    "disclaimer": "Powered by js-dos + Doom Shareware (id Software, 1997)"
+    "disclaimer": "Powered by js-dos + Doom Shareware (id Software, 1997)",
+    "playTitle": "Initialize Security Bypass",
+    "playDesc": "Accessing unauthorized sector. Warning: Executable contains intense recursive action and nostalgic violence.",
+    "controls": "Controls"
   },
   "easter": {
     "hint": "👀 There are secrets here. Find them."

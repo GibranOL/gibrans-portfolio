@@ -53,22 +53,22 @@ export default function Projects() {
       className={`p-6 rounded-2xl border ${isWip ? 'bg-[#0a0a0a] border-dashed border-gray-700' : 'bg-white/[0.02] border-white/10 hover:border-primary/40 hover:bg-white/[0.04]'} transition-all group flex flex-col h-full relative overflow-hidden`}
     >
       <div className="flex justify-between items-start mb-4">
-        <h3 className={`text-xl font-bold ${isWip ? 'text-gray-400' : 'text-white group-hover:text-primary transition-colors'}`}>
+        <h3 className={`text-xl font-bold ${isWip ? 'text-gray-300' : 'text-white group-hover:text-primary transition-colors'}`}>
           {project.title}
         </h3>
         {!isWip && (
           <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-            <a href={project.link} className="text-gray-400 hover:text-white p-1" aria-label="View Source">
+            <a href={project.link} className="text-gray-300 hover:text-white p-1" aria-label="View Source">
               <Github size={18} />
             </a>
-            <a href={project.link} className="text-gray-400 hover:text-white p-1" aria-label="Live Demo">
+            <a href={project.link} className="text-gray-300 hover:text-white p-1" aria-label="Live Demo">
               <ExternalLink size={18} />
             </a>
           </div>
         )}
       </div>
       
-      <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
+      <p className="text-gray-300 text-sm leading-relaxed mb-6 flex-grow">
         {project.desc}
       </p>
 
@@ -114,7 +114,7 @@ export default function Projects() {
 
         {/* WIP Projects */}
         <div>
-          <h3 className="text-xl font-semibold mb-8 text-gray-500 flex items-center gap-3">
+          <h3 className="text-xl font-semibold mb-8 text-gray-400 flex items-center gap-3">
             <span className="w-8 h-[1px] bg-gray-600" />
             {t('projects.wip')}
           </h3>
